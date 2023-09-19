@@ -21,7 +21,7 @@
   <section id="landing-page" onmousemove="moveBackground(event)">
     <nav>
       <figure>
-        <img id="personal-logo" src="assets/logo.png" alt="">
+        <a href="index.html"><img id="personal-logo" src="assets/logo.png" alt=""></a>
       </figure>
       <ul class="nav__link--list">
         <li class="nav__link" onclick="toggleModal()">
@@ -32,7 +32,7 @@
           ">About</a>
         </li>
         <li class="nav__link">
-          <a href="#projects" class="
+          <a href="projects.html" class="
             nav__link--anchor
             link__hover-effect
             link__hover-effect--black
@@ -59,11 +59,10 @@
         <h1 class="title">Hey</h1>
         <h1 class="title purple">I'm Stanton.</h1>
         <p class="header__para">
-          I'm a <b class="purple"> Software Engineer</b> with a strong passion for building websites & applications
-          with great user
-          experiences.
+          As a <b class="purple">software engineer </b> with a passion for animation, I bring together technical skills and artistic vision to create captivating digital experiences.
           <br>
           Here's a bit more <b class="purple click" onclick="toggleModal()">about me</b>.
+          
         </p>
         <div class="social__list">
           <a href="https://www.linkedin.com/in/stannb/" target="_blank" class="social__link click">
@@ -91,12 +90,7 @@
         <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
         <h4 class="modal__sub-title modal__sub-title--about">Software Engineer.</h4>
         <p class="modal__para">
-          I'm a 24 year-old <b class="purple"> software engineer</b> with experience developing
-          websites & applications for singular entities all the way to large companies.
-          <br>
-          Currently I'm working on an indie game using <b class="purple"> Unreal Engine C++ </b>with a small dev team.
-          Feel free to reach out with opportunities. I'm always learning and adopting new technologies! Click<a href="assets/Stanton Barbadillo Resume.pdf"><b> here</b></a> for my resume.
-        </p>
+          I am a dedicated software engineer with a profound passion for animation. Combining my technical expertise with my love for the art form, I strive to create<b>  captivating</b>  digital experiences that seamlessly blend <b> innovation</b>  and <b> creativity</b> . Through my coding skills and understanding of animation principles, I aim to bring ideas to life, infusing <b> interactive</b>  elements with visually appealing designs. With each project, I embark on a journey to push boundaries, enhance user experiences, and showcase the powerful fusion of technology and animation in the digital realm.
         <div class="modal__languages">
           <figure class="modal__language">
             <img class="modal__language--img"
@@ -121,49 +115,40 @@
           </figure>
 
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://mobx.js.org/img/mobx.png" alt="">
-            <span class="language__name">MobX</span>
+            <img class="modal__language--img" src="assets/mongodb.png" alt="">
+            <span class="language__name">MongoDB</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+            <img class="modal__language--img" src="assets/express.png"
               alt="">
+            <span class="language__name">Express</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
             <span class="language__name">React</span>
           </figure>
           <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
-            <span class="language__name">Vue</span>
-          </figure>
-          <figure class="modal__language">
             <img class="modal__language--img"
-              src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
-            <span class="language__name">Nuxt</span>
+              src="assets/node.png" alt="">
+            <span class="language__name">Node</span>
           </figure>
         </div>
       </div>
       <div class="modal__half modal__contact">
         <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
         <h3 class="modal__title modal__title--contact">
-          Let's have a chat!
+          I'm currently open to new <b class="purple">opportunities.</b> 
         </h3>
         <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
+           <br>
+          Email: stankneee@gmail.com <br>
+          Phone: 808-352-8476
         </h3>
+        
         <form id="contact__form" onsubmit="contact(event)">
           <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text" required></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
+      
+         
         </form>
         <div class="modal__overlay modal__overlay--loading">
           <i class="fas fa-spinner"></i>
@@ -256,43 +241,29 @@
           </li>
           <li class="project">
             <div class="project__wrapper">
-              <img src="assets/saveload.png" class="project__img" alt="">
+              <img src="assets/invMan.png" class="project__img" alt="">
               <div class="project__wrapper--bg"></div>
               <div class="project__description">
                 <h3 class="project__description--title">
-                  Save & Load System - Upcoming Indie Game (Name TBD)
+                  Inventory Management Web-Application 
                 </h3>
                 <h4 class="project__description--sub-title">
-                  Unreal Engine, C++
+                  Springboot, Java
                 </h4>
                 <p class="project__description--para">
-                  Built a fully working and easily modifiable save and load system in C++. Built in C++ to be easy to use and change within Unreal Engines Blueprint System.
+                 
+Developed efficient user interactions, intuitive interface, and dynamic inventory system with e-commerce elements. Ensured reliable code through tests, validation, and documentation, utilizing version control.
                 </p>
                 <div class="project__description--links">
-                  <p>Code Snippets available upon request.</p>
+                 
+                  <a href="https://github.com/stankneee/inventoryManagementSpring">
+                    <i class="fas fa-link" style="color:white"></i>
                 </div>
               </div>
             </div>
           </li>
+          
           <li class="project">
-            <div class="project__wrapper">
-              <img src="/assets/rdmdice.png" class="project__img" alt="">
-              <div class="project__wrapper--bg"></div>
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Random Dice Roll
-                </h3>
-                <h4 class="project__description--sub-title">
-                  Html, CSS, JavaScript
-                </h4>
-                <p class="project__description--para">
-                  Random Dice Roll Generator. Allows users to randomly generator two dice rolls.
-                </p>
-                <div class="project--description--links"></div>
-                <a href="Random Dice Roll/dicee.html">
-                  <i class="fas fa-link" style="color:white"></i>
-                  </a>
-              </div>
             </div>
           </li>
         </ul>
@@ -338,7 +309,7 @@
             Resume
           </a>
         </div>
-        <div class="footer__copyright">Copyright &copy; 2022 Stanton Barbadillo</div>
+        <div class="footer__copyright">Copyright &copy; 2023 Stanton Barbadillo</div>
       </div>
     </div>
   </footer>
